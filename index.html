@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <form onsubmit="login()" >
+
+        <h2 style="text-align: center;">Sign in</h2>
+        <div class="username">
+        <i class="fas fa-users"></i>
+        <input type="text" placeholder="Enter your Username" class="inp" id="user" required><br>
+        </div>
+        <div class="mail">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Enter your e-mail" class="inp1" id="mail" required><br>
+       
+        </div>
+        <div class="pas">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Enter password" class="inp2" id="pas" minlength="6" maxlength="12" required><br><br>
+        </div>
+        <button type="submit" id="log" value="submit" >Login</button>
+
+        <p class="con" >Or connect with social network</p>
+        <button id="btn" onclick="myFunction()"><i class="fab fa-facebook"></i></button>
+        <button id="btn1" onclick="myFunc()"><i class="fab fa-linkedin-in"></i></button>
+        <button id="btn2" onclick="myFuncTwo()"><i class="fab fa-instagram"></i></button>
+        <button id="btn3" onclick="myFuncThree()"><i class="fab fa-twitter"></i></button>
+      </form>
+    </div>
+
+</body>
+</html>
